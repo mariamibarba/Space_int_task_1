@@ -23,5 +23,6 @@
 hs_err_pid*
 replay_pid*
 
-# Ignore Allure test results
-allure-results/
+# Allure
+**/allure-results/
+**/allure-report/
