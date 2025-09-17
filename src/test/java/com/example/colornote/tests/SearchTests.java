@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class SearchTests extends BaseTest {
 
     @Test(description = "Create a note and find it using Search")
-    public void search_findsCreatedNote() {
+    public void searchFindsCreatedNote() {
         String title = "Findable Note";
         String body  = "Search me!";
 

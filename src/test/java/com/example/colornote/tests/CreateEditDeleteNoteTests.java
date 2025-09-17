@@ -11,7 +11,7 @@ public class CreateEditDeleteNoteTests extends BaseTest {
 
 
     @Test(description = "Create a text note and verify it appears on the home list")
-    public void createNote_showsInList() {
+    public void createNoteShowsInList() {
         String title = "Test Note";
         String body  = "This is a ColorNote test.";
 
@@ -30,7 +30,7 @@ public class CreateEditDeleteNoteTests extends BaseTest {
     }
 
     @Test(description = "Edit an existing note's body and save")
-    public void editNote_updatesBody() {
+    public void editNoteUpdatesBody() {
         String title = "Editable Note";
         String body  = "Initial body.";
         String extra = " Added text.";
@@ -54,7 +54,7 @@ public class CreateEditDeleteNoteTests extends BaseTest {
     }
 
     @Test(description = "Delete a note and verify it no longer shows on the list")
-    public void deleteNote_removesFromList() {
+    public void deleteNoteRemovesFromList() {
         String title = "Delete Me";
         String body  = "Disposable.";
 
