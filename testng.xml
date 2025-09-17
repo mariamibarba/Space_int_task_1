@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ColorNote Suite" verbose="1" parallel="false">
+    <test name="Core Flows">
+        <classes>
+            <class name="com.example.colornote.tests.CreateEditDeleteNoteTests"/>
+            <class name="com.example.colornote.tests.SearchTests"/>
+        </classes>
+    </test>
+</suite>
