@@ -26,4 +26,4 @@ replay_pid*
 # Allure
 **/allure-results/
 **/allure-report/
-**/idea/
+.idea/
