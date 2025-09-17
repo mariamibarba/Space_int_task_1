@@ -40,7 +40,9 @@ public class DriverFactory {
                     .setDeviceName(System.getProperty("deviceName", props.getProperty("deviceName", "emulator-5554")))
                     .setAppPackage(props.getProperty("appPackage"))
                     .setAppActivity(props.getProperty("appActivity"))
-                    .amend("newCommandTimeout", Integer.parseInt(props.getProperty("newCommandTimeout", "120")));
+                    .amend("newCommandTimeout", Integer.parseInt(props.getProperty("newCommandTimeout", "120")))
+                    .setNoReset(true)
+                    .setFullReset(false);
 
             driver = new AndroidDriver(new URL(server), options);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
